@@ -37,6 +37,7 @@ import DragNDropTest from "./dragndrop-test/dragndrop_main";
 
 import Doorbell from "./doorbell/doorbell_main";
 import GenericDoor from "./doors/generic";
+import AutomaticDoor from "./automatic-door/generic";
 import Earthquake from "./earthquake/earthquake_main";
 import { SGDB } from "./stargate/database";
 
@@ -56,6 +57,7 @@ const registry: { [key: string]: () => Applet } = {
     demongate: (): Applet => new DemonGate(),
     blastdoor: (): Applet => new BlastDoor(),
     door: (): Applet => new GenericDoor(),
+    automaticdoor: (): Applet => new AutomaticDoor(),
     earthquake: (): Applet => new Earthquake(),
 };
 

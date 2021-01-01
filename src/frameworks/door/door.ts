@@ -38,7 +38,7 @@ export default class BasicDoor {
     public get open() { return this._open; }
     public set open(toOpen: boolean) { this.updateDoorState(toOpen, this._locked); }
 
-    private doorRoot: Actor = null;
+    protected doorRoot: Actor = null;
 
     private openSoundFX: MediaInstance = null;
     private closeSoundFX: MediaInstance = null;
@@ -90,6 +90,7 @@ export default class BasicDoor {
 
         BasicDoor.cache[source] = { time: currentTime + 10, struct: null };
 
+        console.log('got source', source);
         // Else create a new entry and wait for it to be filled
         BasicDoor.cache[source].struct = new Promise<DoorStructure>((resolve, reject) => {
             got(source, {json: true })
@@ -98,7 +99,7 @@ export default class BasicDoor {
                 this.translateDSRotations(ds);
                 resolve(ds);
             })
-            .catch((err) => { reject(err); });
+            .catch((err) => { console.log('ohfuck'); reject(err); });
         });
 
         return BasicDoor.cache[source].struct;
@@ -197,7 +198,7 @@ export default class BasicDoor {
         }
     }
 
-    private handlePressed(user: User) {
+    protected handlePressed(user: User) {
         this.open = !this.open;
     }
 }

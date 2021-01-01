@@ -1,0 +1,67 @@
+{
+    "opentime": 2,
+    "opensound": "https://piano.illuminati360.xyz/test/shuffle.ogg",
+    "closesound": "https://piano.illuminati360.xyz/test/deal.ogg",
+    "lockedsound": "https://piano.illuminati360.xyz/test/shuffle.ogg",
+    "parts": [
+        {
+            "prefabid": "artifact:1150512812968116642",
+            "openduration": 1,
+            "closeduration": 1,
+            "closed": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "open": {
+                "position": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 1
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 0
+                }
+            }
+        },
+        {
+            "prefabid": "artifact:1142823848597520821",
+            "openduration": 1,
+            "closeduration": 1,
+            "closed": {
+                "position": {
+                    "x": 5.2719,
+                    "y": -1.2485,
+                    "z": -0.4678
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "open": {
+                "position": {
+                    "x": 5.2719,
+                    "y": -1.2485,
+                    "z": -0.4678
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 0
+                }
+            },
+            "isHandle": true
+        }
+    ]
+}
